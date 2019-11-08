@@ -1,0 +1,44 @@
+@import url(../css/common.css);
+.info {
+    padding: 0 10px;
+    scroll-snap-align: start;
+}
+
+.scroll {
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.text {
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 960px) {
+    .info {
+        margin: 0px auto;
+        scroll-snap-align: none;
+    }
+    .container {
+        grid-gap: 5px;
+    }
+    .logo-xs {
+        display: none;
+    }
+    header {
+        height: 50px;
+    }
+    header nav {
+        grid-template-columns: 1fr;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header ul {
+        font-size: 1em;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .scroll {
+        scroll-snap-type: none;
+    }
+}

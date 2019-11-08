@@ -1,0 +1,40 @@
+            @import url(../css/common.css);
+            body {
+                background-image: url(../assets/img/authorization.jpg);
+            }
+            
+            section {
+                width: 300px;
+                text-align: center;
+            }
+            
+            fieldset {
+                border: none;
+            }
+            
+            main {
+                display: grid;
+                align-items: center;
+            }
+            
+            @media screen and (max-width: 960px) {
+                .container {
+                    grid-gap: 5px;
+                }
+                .logo-xs {
+                    display: none;
+                }
+                header {
+                    height: 50px;
+                }
+                header nav {
+                    grid-template-columns: 1fr;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                header ul {
+                    font-size: 1em;
+                    grid-template-columns: repeat(2, 1fr);
+                    width: 100%;
+                }
+            }

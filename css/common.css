@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    font-family: 'Neucha', cursive;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../assets/img/forest.jpg);
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 60px auto 7%;
+    height: 100vh;
+    grid-gap: 10px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+
+header ul {
+    padding: 0px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+header a:hover {
+    color: #008000;
+}
+
+header li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header a {
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#logo {
+    max-width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    justify-items: center;
+    background: #c4e6f3e6;
+    border: 2px solid #808080;
+    border-radius: 20px 5px;
+    width: max-content;
+    margin: auto;
+    padding: 0 5px;
+}
+
+section {
+    background: #c4e6f3e6;
+    border: 3px solid #808080;
+    border-radius: 20px 5px;
+    max-width: 800px;
+    margin: 0px auto 10px auto;
+}
+
+#address {
+    text-decoration: none;
+}
+
+#address:visited {
+    color: darkorchid;
+}
+
+time {
+    color: cadetblue;
+}
+
+.float {
+    height: 300px;
+    float: right;
+    pointer-events: none;
+}
